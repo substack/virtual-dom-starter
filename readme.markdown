@@ -18,6 +18,7 @@ $ npm start
 
 * `npm run build` - build js for production
 * `npm run watch` - automatically build js on file changes for development
+* `npm run deploy` - build for production and deploy to project homepage
 * `npm start` - start a development server
 
 # starter code

@@ -1,7 +1,9 @@
 {
   "name": "virtual-dom-starter",
+  "homepage": "https://virtual-dom-starter.surge.sh",
   "scripts": {
     "build": "browserify main.js | uglifyjs -cm > public/bundle.js",
+    "deploy": "npm run build && surge public $npm_package_homepage",
     "start": "ecstatic -p 8000 public",
     "watch": "watchify main.js -o public/bundle.js -dv"
   },
@@ -11,6 +13,7 @@
     "main-loop": "^3.1.0",
     "uglify": "~0.1.5",
     "virtual-dom": "^2.0.1",
-    "watchify": "^3.2.3"
+    "watchify": "^3.2.3",
+    "surge": "^0.14.3"
   }
 }
